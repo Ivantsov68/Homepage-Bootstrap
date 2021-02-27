@@ -1,0 +1,298 @@
+header {
+  padding: 20px 0;
+}
+.navbar a {
+  color: #393939;
+  display: inline-block;
+}
+html, body {
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+.line{
+  background-color: #1c3e9b;
+  height: 3px;
+  width: 40px;
+  align-items: center;
+  margin: 15px auto;
+}
+
+.line-white {
+  background-color: #ffffff;
+}
+
+.line__left{
+  margin-left: 0;
+}
+
+.nav-projects {
+  margin-bottom: 30px;
+}
+
+.smart-object-one {
+  margin-left: 100px;
+}
+
+.contacts-img {
+  margin-bottom: 30px;
+}
+
+.services-img {
+  margin-right: 10px;
+}
+
+.services-text {
+  margin-bottom: 10px;
+}
+
+.discription {
+  margin-bottom: 40px;
+}
+.footer {
+  float: none;
+  text-align: center;
+  background-color: #000;
+  color:whitesmoke;
+  margin-top: -50px;
+  flex-shrink: 0;
+  padding: 15px;
+}
+
+main {
+  flex: 1 0 auto;
+}
+footer span {
+  color:yellow
+}
+
+button {
+  margin: 10px;
+}
+
+.btn-primary {
+  background-color: rgb(212, 192, 13);
+  border-radius: 0;
+  color: rgb( 255, 255, 255 );
+}
+
+.btn-outline-secondary {
+  border-radius: 0;
+}
+
+section {
+  padding: 80px;
+}
+
+.image {
+  height: 70px;
+}
+
+.location {
+  height: 370px;
+}
+.services {
+  display: inline-block;
+}
+
+.toys-background {
+  background: url(toys-background.png);
+  background-size: cover;
+  position: relative;
+}
+
+
+.toys-background::after{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.85);
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.toys-background .container{
+  z-index: 3;
+  position: relative;
+}
+
+.black-white-toys-background {
+  background: url(black-white-toys.png);
+  background-size: cover;
+  position: relative;
+}
+
+.black-white-toys-background::after{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.75);
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.black-white-toys-background .container{
+  z-index: 3;
+  position: relative;
+}
+
+.btn.yellow__btn{
+  background-color: #ffb619;
+  color: #fff;
+  border: 1px solid #ffb619;
+  border-radius: 0;
+  font-size: 12px;
+}
+
+.number {
+  margin-top: 20px;
+  margin-left: 0;
+}
+.single {
+  margin-top: 50px;
+}
+
+.tall {
+  padding: 20px;
+}
+
+.main-image {
+  margin-left: 50px;
+}
+
+.btn.yellow__btn:hover{
+  background-color: transparent;
+}
+
+.btn.trans__btn{
+  color: #fff;
+  border-radius: 0;
+  border: 1px solid #fff;
+  font-size: 12px;
+}
+
+.smart-object {
+  margin-left: 40px;
+}
+
+.labels {
+  margin-left: 10px;
+}
+
+.dark-background {
+  background-color: #1a1a1a;
+  background-size: cover;
+}
+
+.light-background {
+  background: url(light-background.png);
+  background-size: cover;
+}
+
+
+
+.project {
+  display: inline;
+  margin: 20px;
+}
+
+.all__projects {
+  color: yellow;
+}
+
+.image__block{
+  background-color: #eee;
+  position: relative;
+  width: 85%;
+}
+
+.image__block::before{
+  content: '';
+  display: block;
+  position: absolute;
+  left: -25px;
+  top: -25px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border: 3px solid #eee;
+}
+
+.image__block img{
+  position: relative;
+  z-index: 2;
+}
+
+.mobile {
+  margin-right: 10px;
+}
+
+.picture {
+  margin-top: 50px;
+}
+.service__item{
+  border: 2px solid #1c3e9b;
+  text-align: center;
+  padding: 15px 15px;
+  transition: all ease .3s .0s;
+  height: 250px;
+}
+
+.service__item:hover{
+  cursor: pointer;
+  background-color: #1c3e9b;
+}
+
+.nav-item__menu {
+  font-weight: 650;
+}
+
+.project__item{
+  height: 290px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.project__item__hover{
+  display: flex;
+  opacity: 0;
+  background-color: rgba(28, 62, 155, .9);
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: ease all .3s 0s;
+}
+
+.project__item:hover .project__item__hover{
+  opacity: 1;
+}
+
+.project__item__hover p,
+.project__item__hover i{
+  color: #fff;
+}
+
+.project__item__hover p.text__yellow{
+  color: #ffb619;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+
+.mycol{
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
+}

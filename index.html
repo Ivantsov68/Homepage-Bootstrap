@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <title>Тестовое задание</title>
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <div class="light-background">
+      <div class="container">
+         <header class="navbar navbar-expand navbar-light">
+            <span>We make your home more quality.</span>
+            <ul class="navbar-nav ml-sm-auto">
+               <li>
+                  <a href="https://ru-ru.facebook.com/" aria-label="Facebook">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" role="img">
+                        <title>Facebook</title>
+                        <path
+                           d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                        </path>
+                     </svg>
+                  </a>
+               </li>
+               <li class="labels">
+                  <a href="https://twitter.com" aria-label="Twitter">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 512 416.32" role="img">
+                        <title>Twitter</title>
+                        <path
+                           d="M160.83 416.32c193.2 0 298.92-160.22 298.92-298.92 0-4.51 0-9-.2-13.52A214 214 0 0 0 512 49.38a212.93 212.93 0 0 1-60.44 16.6 105.7 105.7 0 0 0 46.3-58.19 209 209 0 0 1-66.79 25.37 105.09 105.09 0 0 0-181.73 71.91 116.12 116.12 0 0 0 2.66 24c-87.28-4.3-164.73-46.3-216.56-109.82A105.48 105.48 0 0 0 68 159.6a106.27 106.27 0 0 1-47.53-13.11v1.43a105.28 105.28 0 0 0 84.21 103.06 105.67 105.67 0 0 1-47.33 1.84 105.06 105.06 0 0 0 98.14 72.94A210.72 210.72 0 0 1 25 370.84a202.17 202.17 0 0 1-25-1.43 298.85 298.85 0 0 0 160.83 46.92">
+                        </path>
+                     </svg>
+                  </a>
+               </li>
+               <li class="labels">
+                  <a href="https://www.google.ru/" aria-label="Google">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" role="img">
+                        <title>Google</title>
+                        <path
+                           d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z">
+                        </path> 
+                     </svg>
+                  </a>
+               </li>
+               <li class="labels">
+                  <a href="https://github.com" aria-label="Github">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 512 499.36" role="img">
+                        <title>GitHub</title>
+                        <path
+                           d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z">
+                        </path>
+                     </svg>
+                  </a>
+               </li>
+            </ul>
+         </header>
+      </div>
+   </div>
+   <div class="container">
+      <nav class="navbar navbar-default">
+         <div class="row">
+            <div class="col-xl-4">
+               <div class="row">
+                  <div class="col-xl-2">
+                     <img src="./css/img/logo.PNG" alt="" class="">
+                  </div>
+                  <div class="col-xl-10">
+                     <h4>AUHandy</h4>
+                     <p>We repair everything.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xl-8 d-flex align-items-center justify-content-end">
+               <ul class="nav float-right">
+                  <li class="nav-item nav-item__menu"><a class="nav-link" href="#">HOME</a></li>
+                  <li class="nav-item nav-item__menu"><a class="nav-link" href="#">SERVICES</a></li>
+                  <li class="nav-item nav-item__menu"><a class="nav-link" href="#">PROJECTS</a></li>
+                  <li class="nav-item nav-item__menu"><a class="nav-link" href="#">PAGES</a></li>
+                  <li class="nav-item nav-item__menu"><a class="nav-link" href="#">BLOG</a></li>
+                  <li class="nav-item nav-item__menu"><a class="nav-link" href="#">CONTACT</a></li>
+                  <li class="nav-item nav-item__menu"><a class="nav-link" href="#"><i class="fa fa-search"
+                           aria-hidden="true"></i></a>
+               </ul>
+            </div>
+         </div>
+
+
+
+
+      </nav>
+   </div>
+   <main class="main">
+      <section class="toys-background">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <img src="./css/img/toys.png" alt="" class="main-image">
+               </div>
+               <div class="col-md-6">
+                  <h1 class="text-white">Expert Handyman & Remodeling</h1>
+                  <p class="text-white">Integer consectetur dapibus nisi, et faucibus augue lobortis ut. Proin quis
+                     <br />
+                     porttitor sem. Donec ultrices felis quis tincidunt
+                  </p>
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                     <button type="button" class="btn yellow__btn">LEARN MORE</button>
+                     <button type="button" class="btn trans__btn">GET A QUOTE</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="light-background tall">
+         <div class="container">
+            <div class="row ">
+               <div class="col-md-8 d-flex align-items-center">
+                  <h5>We have 13 years of experience in Auhandy.</h5>
+               </div>
+               <div class="col-md-4 center-block"><img src="" alt="" class="">
+                  <button type="button" class="btn yellow__btn"><img src="./css/img/white-phone.png" class="mobile">
+                     +1 23 568 8967</button>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section>
+         <div class="container ">
+            <div class="row">
+               <div class="col-md-5">
+                  <div class="image__block">
+                     <img src="./css/img/toys.png" alt="" class="">
+                  </div>
+               </div>
+               <div class="col-md-7">
+                  <h3>WHY CHOOSE US</h3>
+                  <div class="line line__left"></div>
+                  <p class="discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Phasellus venenatis
+                     mauris eget
+                     isque
+                     tincidunt.Praesent dignissim mattis mauris. Sed finibus elementu.</p>
+                  <div class="row">
+                     <div class="col-6">
+                        <div class="row">
+                           <div class="col-3">
+                              <img src="./css/img/settings.PNG" alt="" class="image">
+                           </div>
+                           <div class="col-9">
+                              <h6>Easy To Customize.</h6>
+                              <p>Mauris efficitur mi eu nisi venenatis vestibulum sit tellus.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-6">
+                        <div class="row">
+                           <div class="col-3">
+                              <img src="./css/img/support.PNG" alt="" class="image">
+                           </div>
+                           <div class="col-9">
+                              <h6>24/7 Support Service</h6>
+                              <p>Aliquam vel felis quis ipsum fermentum sollicitudin eget.</p>
+                           </div>
+                        </div>
+                     </div>
+                    </div>
+                     <div class="row">
+                        <div class="col-6">
+                           <div class="row">
+                              <div class="col-3">
+                                 <img src="./css/img/gift.PNG" alt="" class="image">
+                              </div>
+                              <div class="col-9">
+                                 <h6>Gift For Loyal Customers</h6>
+                                 <p>Ut imperdiet libero sed tel pretium convallis quis lectus.</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-6">
+                           <div class="row">
+                              <div class="col-3">
+                                 <img src="./css/img/favorite.PNG" alt="" class="image ">
+                              </div>
+                              <div class="col-9">
+                                 <h6>Favorite Customers</h6>
+                                 <p>Lorem ipsum dolor sit a consectetur adipiscing.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+      </section>
+      <section class="black-white-toys-background">
+         <div class="container">
+            <h3 class="text-center text-white">OUR SERVICES</h3>
+            <div class="line line-white"></div>
+            <div class="row">
+               <div class="col-3">
+                  <div class="service__item text-white">
+                     <img src="./css/img/engine.png" alt="" class="picture">
+                     <h5 class="text-center">Engine Repair</h5>
+                     <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+               </div>
+               <div class="col-3">
+                  <div class="service__item text-white">
+                     <img src="./css/img/electrical.png" alt="" class="picture">
+                     <h5 class="text-center">Electrical</h5>
+                     <p class="text-center">Donec malesuada, purus a viverra sodales leo purus lobortis</p>
+                  </div>
+               </div>
+               <div class="col-3">
+                  <div class="service__item text-white">
+                     <img src="./css/img/plumbing.png" alt="" class="picture">
+                     <h5 class="text-center">Plumbing</h5>
+                     <p class="text-center">Praesent dignissim mattis mauris. Sed finibus elementu.</p>
+                  </div>
+               </div>
+               <div class="col-3">
+                  <div class="service__item text-white">
+                     <img src="./css/img/repair.png" alt="" class="picture">
+                     <h5 class="text-center">Repair House</h5>
+                     <p class="text-center">Phasellus venenatis mauris eget isque tincidunt</p>
+                  </div>
+               </div>
+               <div class="text-center">
+                  <button type="button" class="btn yellow__btn single">VIEW ALL SERVICES</button>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section>
+         <div class="container">
+            <div class="row">
+               <h3 class="text-center">OUR PROJECTS</h3>
+               <div class="line"></div>
+               <div class="text-center nav-projects">
+                  <h6 class="project all__projects">ALL</h6>
+                  <h6 class="project">ENGINE REPAIR</h6>
+                  <h6 class="project">ELECTRICAL</h6>
+                  <h6 class="project">PLUMBING</h6>
+                  <h6 class="project">REPAIR HOUSE</h6>
+                  <h6 class="project">WALL PAINT</h6>
+               </div>
+               <div class="row">
+                  <div class="col-4 mycol">
+                  	<div class="project__item" style="background-image: url(./css/img/wire_r.png);">
+                  		<div class="project__item__hover">
+                  			<div class="projct__item__content">
+                  				<p class="text__yellow">Pellentesque finibus maximus</p>
+	                  			<p>Repair House</p>
+	                  			<i class="fa fa-search"></i>
+	                  		</div>
+                  		</div>
+                  	</div>
+                  </div>
+                  <div class="col-4 mycol">
+                     <div class="project__item" style="background-image: url(./css/img/bear.png);">
+                  		<div class="project__item__hover">
+                  			<div class="projct__item__content">
+                  				<p class="text__yellow">Pellentesque finibus maximus</p>
+	                  			<p>Repair House</p>
+	                  			<i class="fa fa-search"></i>
+	                  		</div>
+                  		</div>
+                  	</div>
+                  </div>
+                  <div class="col-4 mycol">
+                     <div class="project__item" style="background-image: url(./css/img/toys_270.png);">
+                  		<div class="project__item__hover">
+                  			<div class="projct__item__content">
+                  				<p class="text__yellow">Pellentesque finibus maximus</p>
+	                  			<p>Repair House</p>
+	                  			<i class="fa fa-search"></i>
+	                  		</div>
+                  		</div>
+                  	</div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-4 mycol">
+                     <div class="project__item" style="background-image: url(./css/img/toys_270.png);">
+                  		<div class="project__item__hover">
+                  			<div class="projct__item__content">
+                  				<p class="text__yellow">Pellentesque finibus maximus</p>
+	                  			<p>Repair House</p>
+	                  			<i class="fa fa-search"></i>
+	                  		</div>
+                  		</div>
+                  	</div>
+                  </div>
+                  <div class="col-4 mycol">
+                     <div class="project__item" style="background-image: url(./css/img/wire_l.png);">
+                  		<div class="project__item__hover">
+                  			<div class="projct__item__content">
+                  				<p class="text__yellow">Pellentesque finibus maximus</p>
+	                  			<p>Repair House</p>
+	                  			<i class="fa fa-search"></i>
+	                  		</div>
+                  		</div>
+                  	</div>
+                  </div>
+                  <div class="col-4 mycol">
+                     <div class="project__item" style="background-image: url(./css/img/bear.png);">
+                  		<div class="project__item__hover">
+                  			<div class="projct__item__content">
+                  				<p class="text__yellow">Pellentesque finibus maximus</p>
+	                  			<p>Repair House</p>
+	                  			<i class="fa fa-search"></i>
+	                  		</div>
+                  		</div>
+                  	</div>
+                  </div>
+               </div>
+               <div class="text-center">
+                  <button type="button" class="btn yellow__btn">ALL PROJECTS</button>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="black-white-toys-background">
+         <div class="container">
+            <div class="row">
+               <div class="col-5">
+                  <h3 class="text-white">YOU HAVE SOME PROBLEMS IN HOUSING?</h3>
+                  <button type="button" class="btn yellow__btn number"><img src="./css/img/white-phone.png" class="mobile">
+                     +7 555 2552 2211</button>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="light-background">
+         <div class="container">
+            <div class="row">
+               <div class="col-5">
+                  <h3>OUR LOCATION</h3>
+                  <div class="line line__left"></div>
+               </div>
+               <div class="col-5">
+                  <h3>GET A QUOTE</h3>
+                  <div class="line line__left"></div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-5">
+                  <img src="./css/img/location.PNG" alt="" class="location">
+               </div>
+               <div class="col-7">
+                  <form class="row g-3">
+                     <div class="col-md-6">
+                        <input type="email" class="form-control" placeholder="Your Name">
+                     </div>
+                     <div class="col-md-6">
+                        <input type="password" class="form-control" placeholder="Your Email">
+                     </div>
+                     <div class="col-md-6">
+                        <input type="email" class="form-control" placeholder="Your Subjects">
+                     </div>
+                     <div class="col-md-6">
+                        <input type="password" class="form-control" placeholder="Your Phone Number">
+                     </div>
+                     <div>
+                        <textarea class="form-control" placeholder="Description Services Needed" rows="6"></textarea>
+                     </div>
+                     <div class="col-12">
+                        <button type="submit" class="btn yellow__btn">SUBMIT</button>
+                     </div>
+               </div>
+               </form>
+            </div>
+      </section>
+      </div>
+      <section class="container">
+         <div class="row">
+            <div class="col-3">
+               <img class="smart-object smart-object-one" src="./css/img/smart-object-1.png" alt="">
+            </div>
+            <div class="col-3">
+               <img class="smart-object" src="./css/img/smart-object-2.png" alt="">
+            </div>
+            <div class="col-3">
+               <img class="smart-object" src="./css/img/smart-object-3.png" alt="">
+            </div>
+            <div class="col-3">
+               <img class="smart-object" src="./css/img/smart-object-4.png" alt="">
+            </div>
+      </section>
+      <section class="dark-background">
+         <div class="container">
+            <div class="row">
+               <div class="col-3 text-white">
+                  <h5>CONTACT US</h5>
+                  <div class="row contacts-img">
+                     <div class="col-2 text-center">
+                        <img src="./css/img/phone.png" alt="" class="">
+                     </div>
+                     <div class="col-10">
+                        <span>+15554 545 45</span>
+                     </div>
+                  </div>
+                  <div class="row contacts-img">
+                     <div class="col-2 text-center">
+                        <img src="./css/img/point.png" alt="" class="">
+                     </div>
+                     <div class="col-10">
+                        <span>Auhandy Tower, New York, NY 10013, USA</span>
+                     </div>
+                  </div>
+                  <div class="row contacts-img">
+                     <div class="col-2 text-center">
+                        <img src="./css/img/email.png" alt="" class="">
+                     </div>
+                     <div class="col-10">
+                        <span>info@example.com</span>
+                     </div>
+                  </div>
+                  <div class="row contacts-img">
+                     <div class="col-2 text-center">
+                        <img src="./css/img/clock.png" alt="" class="">
+                     </div>
+                     <div class="col-10">
+                        <span>Weekdays: 09:00am-06:00pm</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-4 text-white">
+                  <h5>OUR SERVICES</h5>
+                  <div>
+                     <ul class="services nav">
+                        <li class="services-text">
+                           <img src="./css/img/point of service.png" alt="" class="services-img">
+                           <span>Electrical</span>
+                        </li class="services-text">
+                        <li class="services-text">
+                           <img src="./css/img/point of service.png" alt="" class="services-img">
+                           <span>Plumbing</span>
+                        </li>
+                        <li class="services-text">
+                           <img src="./css/img/point of service.png" alt="" class="services-img">
+                           <span>Engine Repairs</span>
+                        </li>
+                        <li class="services-text">
+                           <img src="./css/img/point of service.png" alt="" class="services-img">
+                           <span>Repair House</span>
+                        </li>
+                        <li class="services-text">
+                           <img src="./css/img/point of service.png" alt="" class="services-img">
+                           <span>Home Maintenance</span>
+                        </li>
+                        <li class="services-text">
+                           <img src="./css/img/point of service.png" alt="" class="services-img">
+                           <span>Wall Paint</span>
+                        </li>
+                     </ul>
+                     <ul class="services nav">
+                        <li class="services-text">
+                           <img src="./css/img/point of service.png" alt="" class="services-img">
+                           <span>Installation</span>
+                        </li>
+                        <li class="services-text">
+                           <img src="./css/img/point of service.png" alt="" class="services-img">
+                           <span>Garden Repairs</span>
+                        </li>
+                        <li class="services-text">
+                           <img src="./css/img/point of service.png" alt="" class="services-img">
+                           <span>Soil Drilling</span>
+                        </li>
+                        <li class="services-text">
+                           <img src="./css/img/point of service.png" alt="" class="services-img">
+                           <span>Support 24/7</span>
+                        </li>
+                        <li class="services-text">
+                           <img src="./css/img/point of service.png" alt="" class="services-img">
+                           <span>Inspection House</span>
+                        </li>
+                        <li class="services-text">
+                           <img src="./css/img/point of service.png" alt="" class="services-img">
+                           <span>Remodeling Celling</span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-3">
+                  <img src="./css/img/25%.PNG" alt="" class="">
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <footer class="footer">
+      <div class="container">Copyright © 2018 <span>Auhandy.</span> Get The Theme</div>
+   </footer>
+
+</body>
+
+</html>
